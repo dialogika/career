@@ -5,533 +5,623 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Primary Meta Tags -->
-    <title>We're Hiring - Dialogika</title>
-    <meta name="title" content="Untuk Karir Lebih Baik - Kelas Public Speaking">
-    <meta name="description" content="Join Kelasnya Sekarang | BERGARANSI | GRATIS 1 BULAN">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.dialogika.co/">
-    <meta property="og:title" content="Untuk Karir Lebih Baik - Kelas Public Speaking">
-    <meta property="og:description" content="Join Kelasnya Sekarang | BERGARANSI | GRATIS 1 BULAN">
-    <meta property="og:image" content="assets/img/banners/1.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.dialogika.co/">
-    <meta property="twitter:title" content="Untuk Karir Lebih Baik - Kelas Public Speaking">
-    <meta property="twitter:description" content="Join Kelasnya Sekarang | BERGARANSI | GRATIS 1 BULAN">
-    <meta property="twitter:image" content="assets/img/banners/1.png">
+  <title>Career at Dialogika - Kelas Public Speaking</title>
+  <meta content="Bangun karirmu bersama Dialogika" name="description">
+  <meta content="Career, Vacancy" name="keywords">
 
   <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"/>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
-    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"/>
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet"/>
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
-
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-    <link href="assets/css/style-1.css" rel="stylesheet"/>
+  <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Spreadsheet API Form Pendaftaran -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.js"      
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"></script>
-    <script>
-      function SubForm (){
-        $.ajax({
-        url:"https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
-        type:"post",
-        data:$("#myForm").serializeArray(),
-        headers:{
-          accessKey: "b5216464a11be561ae0b40f9ed98ee90",
-          secretKey: "038c9369d3b221f2387c9d8f3f3e488d"},
-          success: function(){ 
-            alert("Data Telah Tersimpan :)")
-          },
-          error: function(){
-            alert("There was an error :(")
-          }
-        });
-      }
-
-      function SubFormModal (){
-        $.ajax({
-        url:"https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
-        type:"post",
-        data:$("#myFormModal").serializeArray(),
-        headers:{
-          accessKey: "b5216464a11be561ae0b40f9ed98ee90",
-          secretKey: "038c9369d3b221f2387c9d8f3f3e488d"},
-          success: function(){ 
-            alert("Data Telah Tersimpan, Anda akan ke Redirect ke Whatsapp :)")
-            // window.location.href = 'https://link.dialogika.co/whatsapp-modal';
-            // window.open("https://link.dialogika.co/whatsapp-modal");
-          },
-          error: function(){
-            alert("There was an error :(")
-          }
-        });
-      }
-
-      function Subcription (){
-        $.ajax({
-          url:"https://api.apispreadsheets.com/data/18511/",
-          type:"post",
-          data:$("#subcriptions").serializeArray(),
-          success: function(){
-            $('#subcription-modal').modal('show');
-          },
-          error: function(){
-            alert("There was an error :(")
-          }
-        });
-      }
-    </script>
-  <!-- End Spreadsheet API Form Pendaftaran -->
-
-
-  <!-- Pixel Facebook -->
-    <!-- DEC 2021 -->
-      <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '916674555903437');
-        fbq('track', 'PageView');
-      </script>
-      <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=916674555903437&ev=PageView&noscript=1"
-      /></noscript>
-    <!-- END DEC 2021 -->
-  <!-- End Pixel Facebook -->
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148836422-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-148836422-2');
-    </script>
-  <!-- End Global site tag (gtag.js) - Google Analytics -->
-
-  <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KGK9D6H');</script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Hotjar Tracking Code for https://dialogika.co -->
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:2828594,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
-  <!-- End Hotjar -->
-
+  <!-- =======================================================
+  * Template Name: Append
+  * Updated: Jun 20 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body>
-
-  <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGK9D6H"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="d-flex align-items-center fixed-top">
-    <div class="container d-flex justify-content-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope"></i> <a href="mailto:admin@dialogika.co">admin@dialogika.co</a>
-        <i class="bi bi-phone"></i> <a href="https://link.dialogika.co/wasap-2597-dialogika-co">+62 851-6299-2597</a>
-      </div>
-      <div class="d-none d-lg-flex social-links align-items-center">
-        <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://link.dialogika.co/facebook" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://link.dialogika.co/instagram" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://link.dialogika.co/linkedin" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
-    </div>
-  </div><!-- End Top Bar -->
+<body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
-       <a href="https://dialogika.co/" class="logo me-auto"><img src="assets/img/logo.png" alt="Kelas Online Public Speaking" class="img-fluid"></a>
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
 
-       <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul id="navbar-navlist">
-          <li><a class="nav-link scrollto active" data-scroll href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto active" data-scroll href="#about">Why Us</a></li>
-          <li><a class="nav-link scrollto active" data-scroll href="#pricing">Price</a></li>
-          <li><a class="nav-link" href="#canvas-list-mentor" data-bs-toggle="offcanvas">Mentor</a></li>
-          <li><a class="nav-link" href="#f-a-q" data-bs-toggle="offcanvas">FAQ</a></li>
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.png" alt="">
+        <!-- <h1>Append</h1> -->
+        <!-- <span>.</span> -->
+      </a>
+
+      <!-- Nav Menu -->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero" class="active">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Vacancy</a></li>
+          <li><a href="index.html#team">Team</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
 
-       
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav><!-- End Nav Menu -->
 
-    </div>    
-  </header><!-- End Header -->
+      <a class="btn-getstarted" href="index.html#contact">APPLY <span class="d-none d-md-inline">FORM</span></a>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-      <div class="row justify-content-center">
-        <div class="col-xl-7 col-lg-9 text-center">
-          <span class="badge badge-pill rounded-blue">We're Hiring</span>
-          <h1>Content <u>Creator</u></h1>
-          <h2>Untuk Kamu Yang Passionate di Dunia Seni, Kepenulisan, dan Modeling </h2>
-        </div>
-      </div>
-      <div class="text-center">
-        <a href="#inner-page" class="btn-get-started scrollto">Lebih Detailnya</a>
-      </div>
     </div>
-  </section><!-- End Hero -->
+  </header><!-- End Header -->
 
   <main id="main">
 
-    <!-- ======= Inner Page ======= -->
-    <section class="inner-page">
-      <div class="container col-md-6">
-        <p class="smallist"><strong>Updated: October 30th, 2022 </strong></p>
-        <p class="blogs">
-          Dear Candidate...<br><br>
+    <!-- Hero Section - Home Page -->
+    <section id="hero" class="hero">
 
-          Kami harap teman-teman bisa meluangkan waktu membaca tulisan ini.<br><br>
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
 
-          Karena dari sini Dialogika sudah memulai <b>seleksinya</b><br><br>
-
-          Kami mencari teman-teman yang memiliki <b>literasi membaca yang baik</b><br><br>
-
-          Terutama... Untuk tulisan seperti ini.<br><br>
-
-          Ditulisan ini kami akan menjelaskan 3 hal.<br><br>
-
-          Apa itu Dialogika? Seperti apa goal Dialogika dan peran teman-teman yang akan menjadi bagian dari Tim Dialogika.<br><br>
-
-          Kami mulai dari sedikit banyak tentang Dialogika<br><br>
-
-          Intinya Dialogika bukanlah lembaga yang menjual Public Speaking<br><br>
-
-          Namun sebuah komunitas dan movement untuk sebagian orang-orang yang ingin menggembleng dirinya lebih baik<br><br>
-
-          Kita berfokus melakukan perbaikan setiap hari.<br><br>
-
-          Komunikasi Public Speaking adalah salah satu tools yang kita gunakan untuk mengembangkan diri.<br><br>
-
-          Kami memiliki 25 aturan... <br><br>
-
-          Tapi kamu cukup mengimplementasikan 5 aturan diawal.<br><br>
-
-          Yaitu jangan bikin alasan, apapun kondisinya<br><br>
-
-          Kedua, jaga penampilan, dan wajib bangeet senyum <i>everyday</i><br><br>
-
-          Ketiga, kudu wajib banget super fast response, terutama dalam chatting.<br><br>
-
-          Keempat, lakukan kaizen (perbaikan diri sendiri) setiap harinya.<br><br>
-
-          Terakhir, apabila kamu tidak melakukan kesalalahan dalam 2 minggu kamu akan dapat SP hehe...<br><br>
-
-          20 aturan sisanya akan diimplementasikan sambil jalan.<br><br>
-
-          Ada yang perlu teman-teman perhatikan...<br><br>
-
-          Kami menerima segala macam izin bahkan sekalipun izinnya patah hati dan nggak mood kerja atau lagi bete<br><br>
-
-          Tapi ingat...<br><br>
-
-          Kami tidak menerima excuse dalam bentuk apapun<br><br>
-
-          Contoh nya seperti: telat karena ban motor bocor, gak bisa hadir karena hujan, gak bisa kerja karena ada tugas lain dan lain sebagainya<br><br>
-
-          Perlu diperhatikan... Dialogika ini masih tergolong baru<br><br>
-
-          Buat kamu yang mencari gaji disini... saran kami jangan di Dialogika.<br><br>
-
-          Datanglah kembali saat Dialogika sudah lebih besar.<br><br>
-
-          Saat ini kami mencari orang-orang yang ingin mencurahkan energi dan raganya untuk membangun Dialogika.<br><br>
-
-          Dan untuk belajar menjadi lebih baik.<br><br>
-
-          Karena hitungan bulan target kita adalah membawa Dialogika keluar dari zona UMKM <br><br>
-
-          <b>Peran Kamu Di Dialogika</b><br><br>
-
-          Membantu bertanggung jawab atas sosial media di Dialogika<br><br>
-
-          Dari mulai tiktok, reels, design dan tulisan<br><br>
-
-          Jangan khawatir, bukan berarti kamu mengerjakan semuanya.<br><br>
-
-          Dialogika sudah menyiapkan tim untuk kamu kontrol dan handle<br><br>
-
-          Kami juga <b>tidak mencari</b> seseorang dengan pengalaman kerja<br><br>
-
-          Skill bisa dibentuk tetapi attitude tidak.<br><br>
-
-          Bagaimana dengan proses seleksinya di Dialogika?<br><br>
-
-          Pertama candidate meng-klik "Sudah Saya Baca"<br><br>
-
-          Lalu kita akan melakukan wawancara.<br><br>
-
-          Apabila setuju kita akan lanjut ke onjob test selama seminggu<br><br>
-
-          Kemudian apabila cocok maka kita akan lanjut tandatangan MoU<br><br>
-
-          Dan start mulai berkerja<br><br>
-
-          Finally...<br><br>
-
-          Selamat kamu telah menyelesaikan membaca tulisan ini<br><br>
-
-          Kami cukup yakin bahwa kamu cukup masuk kualifikasi untuk masuk ke wawancara<br><br>
-
-          Apabila kamu berminat silahkan klik "Sudah Saya Baca" dibawah ini
-
-        </p>
-      </div>
-    </section><!-- End Inner Page -->
-
-    <!-- ======= Cta Section ======= -->    
-    <section id="ctas" class="ctas">
       <div class="container">
-        <div class="text-center">
-          <h3> <span class="yellow">WARNING!</span> Pastikan Kamu Sudah Membaca Tulisan "Dear Candidate" Secara <span class="yellow">Lengkap</span></h3>
-          <br>
-          <a href="https://wasap.at/3Ov36G" class="red-btn">Saya Sudah Baca</a>
-        </div>
-      </div>
-    </section><!-- End cta Section --> 
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2 class="tengah">Form Pendaftaran</h2>
-          <p>Tombol akan menyala setelah data diinputkan dengan benar</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-6">
-            <form action="javascript:void" method="post" id="myForm" enctype="text/plain" role="form" class="php-email-form needs-validation">
-              <div class="form-group">
-                <input type="text" name="Name" class="form-control" id="names" pattern="[a-zA-Z\s]{3,100}" placeholder="Nama Lengkap*" required>
-                <div class="validate"></div>
-              </div>
-                
-              <div class="row">
-                <div class="col-md-4 form-group">
-                  <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" pattern="[0-9]{10,15}" placeholder="Whatsapp*" required="">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-4 form-group">
-                  <input type="text" class="form-control" name="Work" id="works" pattern="[a-zA-Z\s]{3,100}" placeholder="Profesi*" required>
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-4 form-group">
-                  <input type="text" class="form-control" name="Location" id="locations" pattern="[a-zA-Z\s]{3,100}" placeholder="Domisili*" required>
-                    <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <select name="Program" id="programs" class="form-select" required>
-                  <option value="" selected disabled value="">Program Yang Akan Diambil</option>
-                  <optgroup selected disabled label="============="></optgroup>
-                  <optgroup label="Recommend">
-                    <option>Basic Plus: 499K (+BONUS)</option>
-                    <option>Paket Hemat: 975K (+BONUS)</option>
-                    <option>Action Class 3 Bulan: 549K</option>
-                  </optgroup>
-                  <optgroup label="NO GARANSI">
-                    <option>Action Class 1 Bulan: 217K</option> 
-                  </optgroup>
-                </select>
-                <div class="validate"></div>
-              </div>
-              <select class="d-none" name="Timestamp">
-                <option id="timestamp"></option>
-              </select>
-                <input type="hidden" name="UTM_Source" value="">
-                <input type="hidden" name="UTM_Medium" value="">
-                <input type="hidden" name="UTM_Campaign" value="">
-              <!-- <div class="form-group">
-                <textarea class="form-control" name="Ket" id="messages" rows="4" placeholder="Masalah didalam public speaking?"></textarea>
-                <div class="validate"></div>
-              </div> -->
-              <div class="form-text">
-                *Tombol akan menyala apabila nama, nomor hp, profesi dan domisili telah terisi.
-              </div>
-              <div class="text-center">
-                <button type="submit" id="submits" class="send_contact" data-bs-toggle="modal" data-bs-target="#notifications" onclick="SubForm()">Send Whatsapp</button>
-              </div>
+        <div class="row">
+          <div class="col-lg-10">
+            <h2 data-aos="fade-up" data-aos-delay="100">We Offer You Home Not Just A Bunch Of Task</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Thank you for being interested in starting a career with Dialogika.</p>
+          </div>
+          <div class="col-lg-5">
+            <form action="#" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="300">
+              <input type="text" class="form-control" placeholder="Enter email address">
+              <input type="submit" class="btn btn-primary" value="Sign up">
             </form>
           </div>
+        </div>
+      </div>
 
-          <div class="col-lg-6">
+    </section><!-- End Hero Section -->
 
-            <div class="row">
-              <div class="col-md-12">
-                <div class="info-box">
-                  <i class="bx bx-map"></i>
-                  <h3>Our Address</h3>
-                  <p>Jl. Werkudoro, Tegalrejo, Jadan, Kasihan, Bantul<br> Special Region of Yogyakarta, 55184</p>
+    
+    <!-- About Section - Home Page -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+
+          <div class="col-xl-5 content">
+            <h3>About Us</h3>
+            <h2>Unleash Your Full Potential By Mastering Art Public Speaking</h2>
+            <hr/>
+            <p>Dialogika adalah rumah perubahan untuk Anda yang ingin upgrade mindset, menambah jejaring dan meningkatkan skill komunikasi.</p>
+            <p>Saat ini juga Dialogika menyediakan pelatihan public speaking sebagai product utamanya. Selain itu juga Dialogika memberikan wadah sharing dan teman cerita untuk para member yang sekedar membutuhkan tempat untuk berbagi.</p>
+            <a href="../about" target="__blank" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-xl-7">
+            <div class="row gy-4 icon-boxes">
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                  <i class="bi bi-buildings"></i>
+                  <h3>Headquarter</h3>
+                  <p>Dialogika berlokasi di Yogyakarta, fun fact kami tidak memiliki kantor tetap, vibes kami adalah ngantor di kafe-kafe karena jiwa kami gampang bosenan kalau ngantor disatu tempat saja hehe.</p>
                 </div>
-              </div>
-              <div class="col-md-6" >
-                <div class="info-box mt-4">
-                  <i class="bx bx-envelope"></i>
-                  <h3>Email Contact</h3>
-                  <p>admin@dialogika.co<br></p>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-clipboard-pulse"></i>
+                  <h3>Public Speaking</h3>
+                  <p>Fokus produk yang saat ini sedang berjalan dan kami kembangkan adalah Public Speaking. Dan kami mengajak kepada semua tim kami hingga internship agar mampu berkomunikasi dengan baik.</p>
                 </div>
-              </div>
-              <div class="col-md-6" >
-                <div class="info-box mt-4">
-                  <i class="bx bx-phone-call"></i>
-                  <h3>Whatsapp Contact</h3>
-                  <p>+62 851-6299-2597<br></p>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-command"></i>
+                  <h3>Unique Vibes</h3>
+                  <p>Aturan kami unik-unik, kamu bisa izin tanpa alasan, kamu bahkan boleh izin disaat kamu galau, hingga kamu akan dapat Surat Peringatan kalau kamu tidak pernah melakukan kesalahan. Mayoritas kerja kita sambil tertawa dan bercanda, anehnya kita semua workaholic tapi stay fun dan seru-seruan.</p>
                 </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-graph-up-arrow"></i>
+                  <h3>A Startup</h3>
+                  <p>Umur kami baru 2 tahun, kami belum lama, tidak ada funding, tidak ada investor, all bootstrapping dan to be honest kami belum bisa menggaji Anda dengan layak, tapi kami percaya dalam waktu 1 hingga 2 tahun dengan tim yang solid Dialogika bisa berkompetisi kemaslahatan kepada tim dan mentornya</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- Services Section - Home Page -->
+    <section id="services" class="services">
+
+      <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Vacancy</h2>
+        <p>Posisi yang bisa kamu lamar</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Dedicated Mentor</a></h4>
+                <p class="description">Buat kamu yang suka mengajar, bisa public speaking dan fast response, bisa banget untuk join sebagai mentor.</p>
               </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Social Media Specialist</a></h4>
+                <p class="description">Buat kamu yang passion dengan sosmed, kreatif dan suka tampil dihadapan kamera, kamu bisa banget buat join ke posisi ini.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+              <div>
+                <h4 class="title"><a href="#client-manager" data-bs-toggle="modal" class="stretched-link">Client Manager</a></h4>
+                <p class="description">Buat kamu yang teliti, cermat, gampang mengatur orang lain plus suka public speaking. Kamu cocok banget nih buat terlibat diposisi ini.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Magni Dolores</a></h4>
+                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              </div>
+            </div>
+          </div> --><!-- End Service Item -->
+
+          <!-- <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Nemo Enim</a></h4>
+                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              </div>
+            </div>
+          </div> --><!-- End Service Item -->
+
+          <!-- <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart "></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
+                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+              </div>
+            </div>
+          </div> --><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Services Section -->
+
+    <!-- Features Section - Home Page -->
+    <section id="features" class="features">
+
+      <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Vibes</h2>
+        <p>Seperti apa berkerja di Dialogika?</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+            <h3>Fun But Serious</h3>
+            <p>
+              Kerja di Dialogika memang sambil tertawa, ngobrol tapi serius. Kadang kita beradu argumen, berselisih pendapat, tetapi semuanya kita jalani dengan fun, karena kita memiliki tujuan yang jelas, yaitu mengembangkan diri kita sendiri. 
+            </p>
+            <p>Plus kita punya basic rules yang dipatuhi oleh semua tim yang ada di Dialogika, kamu bisa check basic rulesnya dibawah.</p>
+            <a href="https://doc.clickup.com/2307700/p/h/26dkm-5525/4cf3754e5aaaf76" target="__blank" class="btn btn-get-started">Basic Rules</a>
+          </div>
+          <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <div class="image-stack">
+              <img src="assets/img/features-light-1.jpg" alt="" class="stack-front">
+              <img src="assets/img/features-light-2.jpg" alt="" class="stack-back">
+            </div>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-stretch justify-content-between features-item ">
+          <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+            <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
+            <h3>Most Important Rules</h3>
+            <p>Dari semua basic rules yang kamu lihat diatas, setidaknya ada tiga hal yang tidak boleh dilanggar di Dialogika karena menghilangkan vibes yang ada di Dialogika</p>
+            <ul>
+              <li><i class="bi bi-check"></i> <span>No Excuse, atau jangan pernah membuat alasan apapun.</span></li>
+              <li><i class="bi bi-check"></i><span>Fast Response dan diwajibkan untuk izin jika tidak bisa fast response.</span></li>
+              <li><i class="bi bi-check"></i> <span>Keep Smile dan selalu aktif membantu tim lain sekalipun bukan jobdesknya.</span>.</li>
+            </ul>
+            <a href="#" class="btn btn-get-started align-self-start">Get Started</a>
+          </div>
+        </div><!-- Features Item -->
+
+      </div>
+
+    </section><!-- End Features Section -->
+
+    <!-- Faq Section - Home Page -->
+    <section id="faq" class="faq">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
+              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+              <p>
+                Kumpulan pertanyaan yang sering ditanyakan saat wawancara kerja oleh para kandidat. Check langsung kalau kamu masih penasaran?
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                <h3><span class="num">1.</span> <span>Gajinya Berapa'an Ya Kak?</span></h3>
+                <div class="faq-content">
+                  <p>Dear Candidate, dengan segala hormat seperti yang kami sudah sebutkan diatas, usaha kami masih baru dan ditahap merintis. Sejujurnya kami gaji kami belum bisa dikatakan layak ataupun besar. <br/><br/>Kami juga sangat menyarankan untuk <b>tidak meng-apply</b> apabila kamu merasa gaji adalah pertimbangan utamamu. Mengapa? Karena kami yakin skill dan talent-mu sudah sangat baik, pengalamanmu sudah pasti seabreg, kami yakin perusahaan besar lebih berhak meminangmu bukan perusahaan baru seperti kami. <br/><br/><b>Namun,</b> jika kamu memang suka challenge, suka explorasi, mengembangkan usaha, memiliki energi yang bagus, dan tidak dalam keadaan financial yang sedang sempit, kamu bisa pertimbangkan lowongan ini. <br/><br/>Dan kami senang bisa menerima Anda sebagai bagian dari keluarga besar Dialogika.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">2.</span> <span>Jam Kerjanya Gimana Ya Kak?</span></h3>
+                <div class="faq-content">
+                  <p>Untuk hari ngantornya disetiap hari: Selasa, Kamis, Sabtu dan Minggu. Setiap pukul 10:00 WIB - 16:00 WIB. Kecuali Sabtu dan Minggu seringkali kita datang lebih awal. <br/><br/>Bagaimana dengan hari Senin, Rabu, Jumat? <br/><br/> Umumnya WFH, tapi WFH nya disini <b>sejujurnya seperti libur</b> kita hanya mengerjakan hal-hal kecil saja dan lebih banyak ngobrol (chattingan) dengan tim dan kadang main game bersama.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">3.</span> <span>Ngantornya Di Kafe? Wajib Mesen Kah?</span></h3>
+                <div class="faq-content">
+                  <p>Tidak wajib, karena dari tim seringnya membelikan makanan atau minuman, kalau belum di pesankan, ingetin saja biasanya atasan lupa karena kebanyakan pikiran atau keasyikan kerja wkwkwk, gak perlu malu sama atasan santuy aja. <br/><br/>Namun jika kamu mau pesan tidak masalah, pastikan kamu tidak keberatan disaat memesan.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">4.</span> <span>Kalau Izin Sakit? Termasuk Excuse?</span></h3>
+                <div class="faq-content">
+                  <p>Aturan No Excuse pada basic rules, <b>tidak berlaku</b> disaat kamu: Sakit, Orang Tuamu Sakit, Force Majeur. <br/><br/>Kami longgar dalam memberikan izin kepada tim kami, namun disatu sisi kami juga strict dengan aturan basic rules kami. <br/><br/>Just... use is wisely</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- End Faq Section -->
+
+    <!-- Team Section - Home Page -->
+    <section id="team" class="team">
+
+      <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Kenalan dulu yuk dengan tim Dialogika saat ini, kali aja kita bisa kenalan lebih dekat hehe</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+              <img src="assets/img/team/ron.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Ron Ashrovy</h4>
+              <span>Chief Executive Officer</span>
+              <p>Pendiri dan direktur Dialogika, si Paling serius tapi sebenarnya santuy kok, karena terlalu sibuk sering banget lupa, sering-sering diingetin yaa gengs.</p>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <img src="assets/img/team/zai.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Zaitun Olivia</h4>
+              <span>Assistant Chief Executive Officer</span>
+              <p>Si Paling Workaholic, suka bangeet kerja, sampai-sampai kerjaan tim lain di embat karena terlalu gemes, suaranya imut tapi kalau ketawa ngalahin toa masjid.</p>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+              <img src="assets/img/team/elsa.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Dwiya Elsa</h4>
+              <span>Human Resource Development</span>
+              <p>Si Paling Cantik tapi terlihat sangar kalau lagi diem karena teliti dalam berkerja, kalau komentar seringkali jujur tapi pedes, jangan terlalu dimakan hati yaa gengs</p>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+            <div class="member-img">
+              <img src="assets/img/team/rindi.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Wahyu Rindi</h4>
+              <span>Deal Maker</span>
+              <p>Si Paling Konyol, sumpah sih bergaul 3 hari ni manusia langsung auto gila, kerjanya bikin kita ketawa dan gak fokus, tapi kalau udah urusan penjualan gak ada lawan!</p>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
+            <div class="member-img">
+              <img src="assets/img/team/elfa.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Elfa Nuzila</h4>
+              <span>Designer Strategist</span>
+              <p>Si Paling Misterius, gak pernah nongol di dokumentasi manapun, tapi kerjaan selalu beres, dibalik kemisteriusannya ni orang paling fast response dan baik banget!</p>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
+            <div class="member-img">
+              <img src="assets/img/team/cia.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Pauline Tricia</h4>
+              <span>Instructional Designer</span>
+              <p>Si Paling Imut dan wajahnya paling menipu, sampingan sama ni orang umurmu mendadak tua 10 tahun wkwkw, tapi untuk urusan mengajar, develop materi gak ada lawan nih orang.</p>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Team Section -->
+
+    <!-- Call-to-action Section - Home Page -->
+    <section id="call-to-action" class="call-to-action">
+
+      <img src="assets/img/cta-bg.jpg" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Take Your Decision</h3>
+              <p>Kalau kamu udah yakin, jangan ragu langsung apply saja, tapi kalau kamu ragu udah sholat istikharah aja duluu. Yang penting jangan ragu, karena Dialogika tidak meragukanmu.</p>
+              <a class="cta-btn" href="#">Join Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End Call-to-action Section -->
+
+    <!-- Contact Section - Home Page -->
+    <section id="contact" class="contact">
+
+      <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Apply Form</h2>
+        <p>Urutan seleksi di Dialogika: <br/>Tahap (1): Mengisi Apply Form Dibawah, Tahap (2): Isi Form Screening, Tahap (3): Melakukan Interview, Tahap (4): Pengumuman Masuk.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 order-2 order-sm-1">
+
+            <div class="row gy-4 ">
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="200">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>Jl. Pandega Duta III No.20b, Manggung, Caturtunggal,</p>
+                  <p>Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Call Us</h3>
+                  <p>+62 851 6299 2597</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>career@dialogika.co</p>
+                  <p>hello@dialogika.co</p>
+                  <p>&nbsp;</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="500">
+                  <i class="bi bi-clock"></i>
+                  <h3>Open Hours</h3>
+                  <p>Tuesday, Thursday, Saturday - Sunday</p>
+                  <p>10:00 AM - 16:00 PM</p>
+                </div>
+              </div><!-- End Info Item -->
+
             </div>
 
           </div>
 
+          <div class="col-lg-6 order-1 order-sm-2">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4 ">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" name="whatsapp" class="form-control" placeholder="Your Whatsapp" required>
+                </div>
+
+                <div class="col-md-12 ">
+                  <input type="text" class="form-control" name="email" placeholder="Linkedin Account" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Posisi, domisili dan alasan melamar" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
         </div>
 
       </div>
+
     </section><!-- End Contact Section -->
 
-  </main><!-- End #main -->
+  </main>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" >   
+  <!-- ======= Footer & Counter Area ======= -->
+  <main-footer></main-footer>
+  <!-- ======= End Footer & Counter Area ======= -->
+  
+  <!-- Scroll Top Button -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-    <div class="container d-md-flex py-4">
-
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Dialogika</span></strong> | PT. Dialogika Persona Indonesia
+  <!-- ======= Modal testi-5 ======= -->
+  <div class="modal fade" id="client-manager">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- header modal -->
+        <div class="modal-header">
+          <h4>&nbsp;</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://link.dialogika.co/facebook" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://link.dialogika.co/instagram" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://link.dialogika.co/wasap-2597-dialogika-co" class="google-plus"><i class="bx bxl-whatsapp"></i></a>
-        <a href="https://link.dialogika.co/linkedin" class="linkedin"><i class="bx bxl-linkedin"></i></i></a>
+        <!-- body modal -->
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://doc.clickup.com/2307700/p/h/26dkm-18422/b50170a066b74a4" allowfullscreen></iframe>
+          </div>
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+          <button type="button" class="blue-btn" data-bs-dismiss="modal"
+            style="border: none; box-shadow: none;">Tutup</button>
+        </div>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </div>
 
-  <a href="#pricing" class="back-to-price d-flex align-items-center justify-content-center"><i class="bi bi-receipt-cutoff"></i></a>
-
-  <a href="#contact" class="back-to-top d-flex align-items-center justify-content-center"><i class="bx bxl-whatsapp bx-tada"></i></a>
-  
 
   <!-- Vendor JS Files -->
-    <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/typed.js/typed.min.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/main-2.js"></script>
-    <script src="assets/js/plugins/br1.js"></script>
-    <script src="assets/js/whatsapp.js"></script>
-
-  <!-- Toast Pop Up -->
-    <script>
-      window.addEventListener("load", function(){
-          setTimeout(
-              function open(event){
-                  document.querySelector("#askToast").style.display = "block";
-              },2000),
-          setTimeout(
-            function open(event){
-              document.querySelector("#soldToast").style.display = "block";
-            }, 5000)
-      });
-    </script>
-
-      <script>
-        document.querySelector("#closeAsk").addEventListener("click", function(){
-            document.querySelector("#askToast").style.display = "none";
-        });
-      </script>
-
-      <script>
-        document.querySelector("#closeSold").addEventListener("click", function(){
-            document.querySelector("#soldToast").style.display = "none";
-        });
-      </script>
-  <!-- /Toast Pop Up -->
-    
-  <!-- Timestamp -->
-    <script type="text/javascript">
-      $(function () {
-        $('#submits').attr('disabled', true);
-        $('#myForm').change(function () {
-            if ($('#names').val() != '' && $('#works').val() != '' && $('#locations').val() != '' && $('#whatsapps').val() != '') {
-                $('#submits').attr('disabled', false);
-            } else {
-                $('#submits').attr('disabled', true);
-            }
-        });
-      });
-      // get date
-      var today = new Date();
-      var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-      var time = today.getHours() + ":" + today.getMinutes();
-      var dateTime = date+'    '+time;
-      document.getElementById("timestamp").innerHTML = dateTime;
-      document.getElementById("timestampModal").innerHTML = dateTime;
-    </script>
-  <!-- /Timestamp -->
+  <!-- <script src="assets/js/counterup.js"></script> -->
+  <script src="assets/js/headerfooter.js"></script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 
