@@ -35,6 +35,109 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+
+  <!-- Spreadsheet API Form Pendaftaran -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script>
+      function SubForm (){
+        $.ajax({
+        url:"https://api.apispreadsheets.com/data/4zsshGOEx1aIvu5A/",
+        type:"post",
+        data:$("#myForm").serializeArray(),
+        headers:{
+          accessKey: "9a40490d373dc0227024d62b76373fb2",
+          secretKey: "a4bc8a1e051ae64613fb96a6bf239a3f"},
+          success: function(){ 
+            alert("Lamaran Anda Telah Kami Terima, Terima Kasih Dan Mohon Menunggu.")
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+        });
+      }
+
+      function Subcription (){
+        $.ajax({
+          url:"https://api.apispreadsheets.com/data/18511/",
+          type:"post",
+          data:$("#subcriptions").serializeArray(),
+          success: function(){
+            window.location.href = "https://link.dialogika.co/open-whatsapp-group";
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+        });
+      }
+    </script>
+  <!-- End Spreadsheet API Form Pendaftaran -->
+
+  <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '916674555903437');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=916674555903437&ev=PageView&noscript=1"
+    /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Pixel Quora -->
+    <!-- DO NOT MODIFY -->
+      <!-- Quora Pixel Code (JS Helper) -->
+      <script>
+      !function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+      qp('init', 'cae6711903da464ab62f03df5f66aedc');
+      qp('track', 'ViewContent');
+      </script>
+      <noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/cae6711903da464ab62f03df5f66aedc/pixel?tag=ViewContent&noscript=1"/></noscript>
+      <!-- End of Quora Pixel Code -->
+      <script>qp('track', 'GenerateLead');</script>
+  <!-- End Pixel Quora -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148836422-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-148836422-2');
+    </script>
+  <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KGK9D6H');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Hotjar Tracking Code for https://dialogika.co -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2828594,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  <!-- End Hotjar -->
 </head>
 
 <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
@@ -72,7 +175,7 @@
     <!-- Hero Section - Home Page -->
     <section id="hero" class="hero">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/1.jpg" alt="" data-aos="fade-in">
 
       <div class="container">
         <div class="row">
@@ -81,10 +184,10 @@
             <p data-aos="fade-up" data-aos-delay="200">Thank you for being interested in starting a career with Dialogika.</p>
           </div>
           <div class="col-lg-5">
-            <form action="#" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="300">
+            <!-- <form action="#" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="300">
               <input type="text" class="form-control" placeholder="Enter email address">
               <input type="submit" class="btn btn-primary" value="Sign up">
-            </form>
+            </form> -->
           </div>
         </div>
       </div>
@@ -242,7 +345,7 @@
       <div class="container">
 
         <div class="row gy-4 align-items-center features-item">
-          <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200" id="fun-but-serious">
             <h3>Fun But Serious</h3>
             <p>
               Kerja di Dialogika memang sambil tertawa, ngobrol tapi serius. Kadang kita beradu argumen, berselisih pendapat, tetapi semuanya kita jalani dengan fun, karena kita memiliki tujuan yang jelas, yaitu mengembangkan diri kita sendiri. 
@@ -252,25 +355,25 @@
           </div>
           <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
             <div class="image-stack">
-              <img src="assets/img/features-light-1.jpg" alt="" class="stack-front">
-              <img src="assets/img/features-light-2.jpg" alt="" class="stack-back">
+              <img src="assets/img/i1.jpg" alt="" class="stack-front">
+              <img src="assets/img/i2.jpg" alt="" class="stack-back">
             </div>
           </div>
         </div><!-- Features Item -->
 
         <div class="row gy-4 align-items-stretch justify-content-between features-item ">
           <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-            <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
+            <img src="assets/img/b4.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
             <h3>Most Important Rules</h3>
             <p>Dari semua basic rules yang kamu lihat diatas, setidaknya ada tiga hal yang tidak boleh dilanggar di Dialogika karena menghilangkan vibes yang ada di Dialogika</p>
             <ul>
-              <li><i class="bi bi-check"></i> <span>No Excuse, atau jangan pernah membuat alasan apapun.</span></li>
-              <li><i class="bi bi-check"></i><span>Fast Response dan diwajibkan untuk izin jika tidak bisa fast response.</span></li>
-              <li><i class="bi bi-check"></i> <span>Keep Smile dan selalu aktif membantu tim lain sekalipun bukan jobdesknya.</span>.</li>
+              <li><i class="bi bi-check"></i> <span><b>No Excuse,</b> atau jangan pernah membuat alasan apapun.</span></li>
+              <li><i class="bi bi-check"></i><span><b>Fast Response</b> dan diwajibkan untuk izin jika tidak bisa fast response.</span></li>
+              <li><i class="bi bi-check"></i> <span><b>Keep Smile</b> dan selalu aktif membantu tim lain sekalipun bukan jobdesknya.</span>.</li>
             </ul>
-            <a href="#" class="btn btn-get-started align-self-start">Get Started</a>
+            <a href="#contact" class="btn btn-get-started align-self-start">Apply Now</a>
           </div>
         </div><!-- Features Item -->
 
@@ -300,7 +403,7 @@
               <div class="faq-item faq-active">
                 <h3><span class="num">1.</span> <span>Gajinya Berapa'an Ya Kak?</span></h3>
                 <div class="faq-content">
-                  <p>Dear Candidate, dengan segala hormat seperti yang kami sudah sebutkan diatas, usaha kami masih baru dan ditahap merintis. Sejujurnya kami gaji kami belum bisa dikatakan layak ataupun besar. <br/><br/>Kami juga sangat menyarankan untuk <b>tidak meng-apply</b> apabila kamu merasa gaji adalah pertimbangan utamamu. Mengapa? Karena kami yakin skill dan talent-mu sudah sangat baik, pengalamanmu sudah pasti seabreg, kami yakin perusahaan besar lebih berhak meminangmu bukan perusahaan baru seperti kami. <br/><br/><b>Namun,</b> jika kamu memang suka challenge, suka explorasi, mengembangkan usaha, memiliki energi yang bagus, dan tidak dalam keadaan financial yang sedang sempit, kamu bisa pertimbangkan lowongan ini. <br/><br/>Dan kami senang bisa menerima Anda sebagai bagian dari keluarga besar Dialogika.</p>
+                  <p>Dear Candidate, dengan segala hormat seperti yang kami sudah sebutkan diatas, usaha kami masih baru dan ditahap merintis. Sejujurnya kami gaji kami belum bisa dikatakan layak ataupun besar. <br/><br/>Kami juga sangat menyarankan untuk <b>tidak meng-apply</b> apabila kamu merasa gaji adalah pertimbangan utamamu. Mengapa? Karena kami tidak tahu keadaanmu, boleh jadi ibumu sedang sakit sehingga kamu harus menggantikannya berkerja, atau adik-adikmu butuh biaya sekolah, atau kamu sedang terlilit hutang dan lain-lain. <br/><br/><b>Namun,</b> jika kamu memang suka challenge, suka explorasi, mengembangkan usaha, memiliki energi yang bagus, dan tidak dalam keadaan financial yang sedang sempit, kamu bisa pertimbangkan lowongan ini. <br/><br/>Dan kami senang bisa menerima Anda sebagai bagian dari keluarga besar Dialogika.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -538,31 +641,56 @@
           </div>
 
           <div class="col-lg-6 order-1 order-sm-2">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="javascript:void" method="post" id="myForm" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4 ">
 
+                <select class="d-none" name="Timestamp">
+                  <option id="timestamp"></option>
+                </select>
+                <script type="text/javascript">
+                  var today = new Date();
+                  var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+                  var time = today.getHours() + ":" + today.getMinutes();
+                  var dateTime = date + '    ' + time;
+                  document.getElementById("timestamp").innerHTML = dateTime;
+                </script>
+
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  <input type="text" name="Nama" class="form-control" placeholder="Your Name" required>
                 </div>
 
                 <div class="col-md-6">
-                  <input type="text" name="whatsapp" class="form-control" placeholder="Your Whatsapp" required>
+                  <input type="number" name="Whatsapp" class="form-control" placeholder="Your Whatsapp" required>
                 </div>
 
                 <div class="col-md-12 ">
-                  <input type="text" class="form-control" name="email" placeholder="Linkedin Account" required>
+                  <input type="text" class="form-control" name="Linkedin" placeholder="Linkedin Link: linkedin.com/in/USERNAME" required>
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Posisi, domisili dan alasan melamar" required></textarea>
+                  <textarea class="form-control" name="Notes" rows="6" placeholder="Posisi, domisili dan alasan melamar" required></textarea>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="funs" name="Basic Rules" value="TRUE">
+                    <label class="form-check-label" for="funs">Saya Sudah <b><u><a href="#fun-but-serious">Membaca Basic Rules</a></u></b></label>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="faqs" name="FAQ" value="TRUE">
+                    <label class="form-check-label" for="faqs">Saya Sudah <b><u><a href="#faq">Membaca FAQ</a></u></b></label>
+                  </div>
                 </div>
 
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
-                  <div class="error-message"></div>
+                  <!-- <div class="error-message"></div> -->
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit" onclick="SubForm()">Submit</button>
                 </div>
 
               </div>
@@ -584,7 +712,7 @@
   <!-- Scroll Top Button -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- ======= Modal testi-5 ======= -->
+  <!-- ======= Modal client-manager ======= -->
   <div class="modal fade" id="client-manager">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -596,7 +724,7 @@
         <!-- body modal -->
         <div class="modal-body">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://doc.clickup.com/2307700/p/h/26dkm-18422/b50170a066b74a4" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="https://doc.clickup.com/2307700/p/h/26dkm-18422/b50170a066b74a4" height="500" width="100%"></iframe>
           </div>
         </div>
         <!-- footer modal -->
